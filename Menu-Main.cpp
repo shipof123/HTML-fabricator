@@ -2,8 +2,7 @@
     #include <iostream>
     #include <stdio.h>
     /*#include "html.h"     //includes from other headers
-    */
-    void cls()
+    */ void cls()
     {
         for(int i=1;i<26;i++)
         printf("\n");
@@ -14,7 +13,8 @@
         cout<<"WELCOME to REALLY BAD PROGRAM Shipof MADE!!!!"<<endl;
         cout <<"--------------------------------------------"<<endl;
         int answer;
-        while(1)
+        int thing = 0;
+        while(thing<1)
         {
             cout<<"Please select an option "<<endl;
             cout<<"\t\t1-Create new project"<<endl;
@@ -28,7 +28,7 @@
                 case 2:
                     //function call
                 case 3:
-                    break;
+                thing++;
                 default:
                     cls();
             }
