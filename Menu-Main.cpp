@@ -21,14 +21,14 @@ int main()
         cout<<"\t\t3-Quir"<<endl;
         cin>>answer;
         switch(answer)
-            case "1":
+            case 1:
                 //function call
-            case "2";
+            case 2:
                 //function call
-            case "3":
+            case 3:
                 break;
-        default:
-        cls();
+            default:
+                cls();
     }
     return 0;
 }
