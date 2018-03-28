@@ -1,7 +1,8 @@
     #include <vector>
+    #include "html.h"
+    #include "test.h"
     #include <iostream>
     #include <stdio.h>
-    #include "includes.h"
     //includes from other headers
      void cls()
     {
@@ -34,10 +35,10 @@
             {
                 thing++;
             }
+            if (answer==5)
+                test::test();
             else
-            {
-                 cls();
-            }
+                cls();
         }
     return 0;
     }
