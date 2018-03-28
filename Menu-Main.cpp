@@ -1,8 +1,9 @@
     #include <vector>
     #include <iostream>
     #include <stdio.h>
-    /*#include "html.h"     //includes from other headers
-    */ void cls()
+    #include "includes.h"
+    //includes from other headers
+     void cls()
     {
         for(int i=1;i<26;i++)
         printf("\n");
@@ -36,7 +37,6 @@
             else
             {
                  cls();
-            }
             }
         }
     return 0;
