@@ -2,6 +2,7 @@
 #define INCLUDES_H_
 #include <vector>
 #include "html.h"
+#include "file.h"
 #include "test.h"
 #include <iostream>
 #include <stdio.h>
