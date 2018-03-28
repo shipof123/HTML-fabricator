@@ -21,16 +21,22 @@
             cout<<"\t\t2-Append old project"<<endl;
             cout<<"\t\t3-Quit"<<endl;
             cin>>answer;
-            switch(answer)
+            if(answer==1)
+                {
+                    //function call
+                }
+            if(answer==2)
             {
-                case 1:
-                    //function call
-                case 2:
-                    //function call
-                case 3:
+                //function call
+            }
+            if (answer==3)
+            {
                 thing++;
-                default:
-                    cls();
+            }
+            else
+            {
+                 cls();
+            }
             }
         }
     return 0;
