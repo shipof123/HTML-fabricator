@@ -1,6 +1,7 @@
-#ifndef FILEINPUT_H_
-#define FILEINPUT_H_
+#ifndef FILE_H_
+#define FILE_H_
 #include <string>
+#include <fstream>
 #include "includes.h"
 namespace file
 {
