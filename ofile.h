@@ -3,6 +3,7 @@
 #include <string>
 #include <fstream>
 #include <iostream>
+#include "html.h"
 using namespace std;
 namespace ofile
 {
@@ -27,7 +28,10 @@ namespace ofile
 			{
 				thing2++;
 			}
-			
+			else if(choice2==1)
+			{
+				html::link(filename);
+			}	
 		}
 			return 0;
 	}

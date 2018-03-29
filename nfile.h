@@ -2,6 +2,7 @@
 #define NFILE_H_
 #include <string>
 #include <fstream>
+#include "html.h"
 #include <iostream>
 using namespace std;
 namespace nfile
@@ -19,9 +20,9 @@ int nfile()
 	filename = filename +".html";
 	ofstream outf(filename.c_str());
 	outf << "<!DOCTYPE html>\n<html>\n<head><link rel=\"stylesheet\" href=\""<<cssfile<<".css\">\n<center><h1>"<< header << "<left></h1></head>\n<body>"<<endl;
-		while(thing2=0)
+		while(thing2==0)
 		{
-			std::cout<<"Would you like to add a ...."<<endl;
+			std::cout<<"Would you like to add ...."<<endl;
 			std::cout<<"1\t..a link"<<endl;
 			std::cout<<"2\t..an image"<<endl;
 			std::cout<<"3\t..a table "<<endl;
@@ -32,11 +33,11 @@ int nfile()
 		{
 			thing2++;
 		}
+		else if(choice2==1)
+			{
+				html::link(filename);
+			}	
 		}
-	while(thing2!=1)
-	{
-	thing2++;
-	}
 return 0;
 }
 

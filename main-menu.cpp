@@ -3,6 +3,7 @@
     #include "ofile.h"
     #include <iostream>
     #include <stdio.h>
+    #include "html.h"
      void cls()
     {
         for(int i=1;i<26;i++)
@@ -25,11 +26,11 @@
             cin>>answer;
             if(answer==1)
                 {
-                ofile::ofile();
+                nfile::nfile();
                 }
             if(answer==2)
             {
-                nfile::nfile();
+                ofile::ofile();
             }
             if (answer==3)
             {
